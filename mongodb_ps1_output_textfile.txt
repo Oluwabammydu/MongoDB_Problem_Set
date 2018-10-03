@@ -1,0 +1,42 @@
+C:\Exercise\pymongo\uo>python mongodb_ps1.py
+***************************************
+
+The number of documents in my collection:  4
+***************************************
+
+All entries with 'Em' in field 'skills':  0
+***************************************
+
+Printing all entries:
+{
+  "_id": 1,
+  "skills": [
+    "extreme programming",
+    "python",
+    "flask"
+  ]
+}
+{
+  "_id": 2,
+  "skills": [
+    "jquery",
+    "linux command line",
+    "mongodb"
+  ]
+}
+{
+  "_id": 3,
+  "skills": [
+    "extreme programming",
+    "javascript",
+    "mongodb"
+  ]
+}
+{
+  "_id": 4,
+  "skills": [
+    "dynamic programming",
+    "python",
+    "flask"
+  ]
+}
