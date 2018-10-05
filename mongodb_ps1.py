@@ -13,7 +13,7 @@ developer_client = [
     {"_id": 4, "name": "Emeka", "skills": ["dynamic programming","python","flask"] ,
         "github repo link": "https://github.com/Shyzay"}
         ]
-
+'''
 query = [ {"_id": 1, "name": "Chizokam", "skills": "python" ,
         "github repo link": "https://github.com/Chiazokam"} ,
     {"_id": 2, "name": "Emmanuel", "skills": "jquery" ,
@@ -23,14 +23,25 @@ query = [ {"_id": 1, "name": "Chizokam", "skills": "python" ,
     {"_id": 4, "name": "Emeka", "skills": "agile programming" ,
         "github repo link": "https://github.com/Shyzay"}
 ]
+'''
+'''
+for q in query:
+    collection.insert(q)
+'''
 
+'''
 for q in query:
     for d in developer_client:
         if (d['_id'] == q['_id']):
-            collection.update({'_id': q['_id'] }, { 'skills': d['skills']})
-#newvalues = {"$set": {Developer_client}}
+            try:
+                print(d['_id'])
+                collection.update_one({'_id': q['_id'] }, {'$set': {'skills': d['skills']}})
+            except Exception as e:
+                print(e)
+'''
+
 #collection.update_many(query, newvalues)
-#collection.insert_many(Developer_client)
+collection.insert_many(developer_client)
 print('***************************************', '\n')
 # Printing the number of documents in the collections
 
@@ -48,3 +59,4 @@ print('Printing all entries:')
 #db.collection.findAndModify(document)¶
 for x in collection.find():
     print(json.dumps(x, indent=2))
+#collection.delete_many({})
