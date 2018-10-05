@@ -4,39 +4,47 @@ C:\Exercise\pymongo\uo>python mongodb_ps1.py
 The number of documents in my collection:  4
 ***************************************
 
-All entries with 'Em' in field 'skills':  0
+All entries with 'Em' in field 'skills':  2
 ***************************************
 
 Printing all entries:
 {
   "_id": 1,
+  "name": "Chizokam",
   "skills": [
     "extreme programming",
     "python",
     "flask"
-  ]
+  ],
+  "github repo link": "https://github.com/Chiazokam"
 }
 {
   "_id": 2,
+  "name": "Emmanuel",
   "skills": [
     "jquery",
     "linux command line",
     "mongodb"
-  ]
+  ],
+  "github repo link": "https://github.com/Emman77240"
 }
 {
   "_id": 3,
+  "name": "Marshall",
   "skills": [
     "extreme programming",
     "javascript",
     "mongodb"
-  ]
+  ],
+  "github repo link": "https://github.com/uimarshall"
 }
 {
   "_id": 4,
+  "name": "Emeka",
   "skills": [
     "dynamic programming",
     "python",
     "flask"
-  ]
+  ],
+  "github repo link": "https://github.com/Shyzay"
 }
